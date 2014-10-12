@@ -1,0 +1,15 @@
+v1.00 - 2014/10/12
+
+UC_001 - Capo aggiunge notizia
+
+Dopo aver effettuato il login, il capo avrà subito a disposizione un editor di testo WYSIWYG che gli permetterà di inserire una notizia, con titolo e corpo del testo.
+
+Precondizione:
+    L'utente deve essere registrato e approvato come capo dagli amministratori del sito.
+
+Procedimento:
+    L'utente entra nel sito.
+    Fa il login.
+    Nell'area riservata trova l'editor di testo.
+    Inserisce titolo e testo della notizia.
+    Pubblica l'articolo.
