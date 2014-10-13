@@ -2,7 +2,23 @@ v1.00 - 2014/10/12
 
 Il sito del gruppo deve essere uno strumento di supporto sia per i capi che per i soci.
 Il progetto punta alla massima semplicità per tutti i suoi utenti:
-    - Tutti gli utenti potranno consultare le sezioni tramite un'interfaccia grafica ordinata e minimale;
-    - Gli utenti registrati potranno accedere all'area download ed eventualmente alla fotogallery;
-    - I capi potranno inserire facilmente avvisi, news, eventi e file relativi alle loro branche;
-    - Gli amministratori presenti e futuri non saranno sobbarcati di lavoro, come nelle precedenti "edizioni" del sito.
+    - Tutti gli utenti potranno consultare le sezioni tramite un'interfaccia grafica ordinata
+    e minimale;
+    - Gli utenti registrati potranno accedere all'area download ed eventualmente alla
+    fotogallery;
+    - I capi potranno inserire facilmente avvisi, news, eventi e file relativi alle loro
+    branche;
+    - Gli admin potranno creare nuovi utenti, modificare i privilegi di ogni utente e
+    aggiungere/modificare/eliminare i contenuti di tutte le Branche.
+    
+Politica di registrazione: gli utenti vengono creati in base ai dati del censimento annuale.
+Questo non significa necessariamente che l'utente venga eliminato all'istante se il socio
+smette di censirsi, ma sarebbe opportuno stabilire una deadline di qualche anno raggiunta la
+quale l'utente viene cancellato (questo soprattutto per ragioni di privacy legate alla
+fotogallery).
+
+Altri obiettivi:
+    - Gli amministratori presenti e futuri non saranno sobbarcati di lavoro, come nelle
+    precedenti "edizioni" del sito.
+    - Gli amministratori potrebbero dotarsi di una specie di "mini-forum" interno per
+    discutere lo sviluppo del sito in modo più efficiente rispetto a Facebook.
