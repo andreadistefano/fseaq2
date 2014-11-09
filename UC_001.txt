@@ -1,15 +1,46 @@
 v1.00 - 2014/10/12
 
-UC_001 - Capo aggiunge notizia
+UC_001 - Gestione notizie
+
+Precondizioni comuni a tutti i sottocasi:
+    L'utente deve essere registrato e approvato come capo dagli amministratori del sito.
+    Il capo deve aver effettuato il Login.
+
+INSERIMENTO
 
 Dopo aver effettuato il login, il capo avrà subito a disposizione un editor di testo WYSIWYG che gli permetterà di inserire una notizia, con titolo e corpo del testo.
 
-Precondizione:
-    L'utente deve essere registrato e approvato come capo dagli amministratori del sito.
+Flusso di base:
+    1. Il Capo inserisce il titolo della notizia.
+    2. Il Capo inserisce il testo della notizia.
+    3. Il Capo sceglie la Branca o le Branche a cui fa riferimento la notizia.
+    4. Il Capo sceglie se la notizia va pubblicata immediatamente o meno.
+    5. Il Capo schiaccia sul pulsante di pubblicazione.
+    6.          Il Sistema aggiunge informazioni aggiuntive alla notizia: autore, ora di creazione, ecc.
+    7.          Il Sistema conferma che l'inserimento è avvenuto con successo.
+    
+Flussi alternativi:
+    2a. Il Capo inserisce un'immagine nel testo della notizia.
+        (Dettagli sul caricamento immagine)
+    5a. Il Capo è andato offline mentre creava la notizia:
+        5-1.    Il Sistema mostra un messaggio di errore.
+        
+Postcondizioni:
+    La notizia viene visualizzata sulle pagine delle relative Branche.
+    Il Capo viene condotto alla schermata con l'elenco delle notizie.
+    
+ELENCO
 
-Procedimento:
-    L'utente entra nel sito.
-    Fa il login.
-    Nell'area riservata trova l'editor di testo.
-    Inserisce titolo e testo della notizia.
-    Pubblica l'articolo.
+La schermata principale conterrà un elenco paginato di notizie visibili al Capo.
+
+Flusso di base:
+    1.      Il Sistema verifica la Branca del Capo e i suoi permessi.
+    2.      Il Sistema restituisce l'elenco di notizie che il Capo può vedere.
+    
+CANCELLAZIONE
+
+Accanto a ciascuna notizia sarà presente un pulsante di cancellazione.
+
+Flusso di base:
+    1. Il Capo richiede la cancellazione di una notizia.
+    2.      Il Sistema richiede una conferma
