@@ -6,9 +6,3 @@ Rails.application.initialize!
 
 # Don't pluralize table names
 ActiveRecord::Base.pluralize_table_names = false
-
-
-# PLURALIZATION RULES
-ActiveSupport::Inflector.inflections do |inflect|
-  inflect.irregular 'socio', 'soci'
-end
