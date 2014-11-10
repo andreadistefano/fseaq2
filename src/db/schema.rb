@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141109234538) do
+ActiveRecord::Schema.define(version: 20141110214927) do
+
+  create_table "branca", force: true do |t|
+    t.string   "nome"
+    t.string   "nomeUnita"
+    t.string   "descrizione"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "socio", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -34,5 +42,14 @@ ActiveRecord::Schema.define(version: 20141109234538) do
 
   add_index "socio", ["reset_password_token"], name: "index_socio_on_reset_password_token", unique: true
   add_index "socio", ["username"], name: "index_socio_on_username", unique: true
+
+  create_table "unita", force: true do |t|
+    t.string   "nome"
+    t.integer  "branca_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "unita", ["branca_id"], name: "index_unita_on_branca_id"
 
 end

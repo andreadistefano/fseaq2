@@ -10,4 +10,5 @@ class Socio < ActiveRecord::Base
   def email_changed?
     false
   end
+  belongs_to :servizio, class_name: "Unita", inverse_of: :capi
 end
