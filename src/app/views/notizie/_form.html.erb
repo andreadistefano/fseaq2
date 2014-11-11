@@ -1,0 +1,17 @@
+<%= form_for(@notizia) do |f| %>
+  <% if @notizia.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@notizia.errors.count, "error") %> prohibited this notizia from being saved:</h2>
+
+      <ul>
+      <% @notizia.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

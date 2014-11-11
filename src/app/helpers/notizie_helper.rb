@@ -1,0 +1,2 @@
+module NotizieHelper
+end
