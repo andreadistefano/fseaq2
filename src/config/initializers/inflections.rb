@@ -15,9 +15,10 @@
 #   inflect.acronym 'RESTful'
 # end
 ActiveSupport::Inflector.inflections do |inflect|
-  inflect.irregular 'socio',  'soci'
-  inflect.irregular 'branca', 'branche'
-  inflect.irregular 'unita',  'unita'
-  inflect.irregular 'aiuto',  'aiuti'
-  inflect.irregular 'capo',   'capi'
+  inflect.irregular 'socio',    'soci'
+  inflect.irregular 'branca',   'branche'
+  inflect.irregular 'unita',    'unita'
+  inflect.irregular 'aiuto',    'aiuti'
+  inflect.irregular 'capo',     'capi'
+  inflect.irregular 'notizia',  'notizie'
 end
