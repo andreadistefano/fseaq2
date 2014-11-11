@@ -1,1 +1,1 @@
-json.extract! @notizia, :id, :created_at, :updated_at
+json.extract! @notizia, :id, :title, :text, :created_at, :updated_at

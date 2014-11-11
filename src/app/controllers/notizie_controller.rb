@@ -69,6 +69,6 @@ class NotizieController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def notizia_params
-      params[:notizia]
+      params.require(:notizia).permit(:title, :text)
     end
 end
