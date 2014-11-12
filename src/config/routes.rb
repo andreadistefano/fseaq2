@@ -56,4 +56,5 @@ Rails.application.routes.draw do
   #   end
 
   resources :notizie
+  resources :soci, only: [:show]
 end
