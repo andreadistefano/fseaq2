@@ -1,10 +1,13 @@
-<%= @prova.to_s %>
-
 <div id="notizie">
 <h1> Elenco Notizie </h1>
 <%if !@notizie.nil? %>
+  <table><tbody>
   <% @notizie.each do |n| %>
-    <p> <%= link_to n.title, n %></p>
+    <tr>
+      <td><%= link_to n.title, n %></td>
+    </tr>
   <% end %>
+  </tbody></table>
+  <%= paginate @notizie %>
 <% end %>
 </div>

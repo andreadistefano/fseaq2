@@ -6,6 +6,6 @@ class HomeController < ApplicationController
   	if File.exist?(csv_path)
   	  @rows = Parser.parse(csv_path)
   	end
-  	@notizie = Notizia.all
+  	@notizie = Notizia.order("updated_at").page(params[:page]).per(3)
   end
 end
