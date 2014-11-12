@@ -2,9 +2,9 @@
 
 <div id="notizie">
 <h1> Elenco Notizie </h1>
-<%if !@rows.nil? %>
-  <% @rows.each do |r| %>
-    <p> <%= r %></p>
+<%if !@notizie.nil? %>
+  <% @notizie.each do |n| %>
+    <p> <%= link_to n.title, n %></p>
   <% end %>
 <% end %>
 </div>
