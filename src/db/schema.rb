@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141111163719) do
+ActiveRecord::Schema.define(version: 20141112084928) do
 
   create_table "branca", force: true do |t|
     t.string   "nome"
@@ -51,6 +51,8 @@ ActiveRecord::Schema.define(version: 20141111163719) do
     t.datetime "confirmation_sent_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "nome"
+    t.string   "cognome"
   end
 
   add_index "socio", ["reset_password_token"], name: "index_socio_on_reset_password_token", unique: true

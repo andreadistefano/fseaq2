@@ -3,7 +3,6 @@ class Socio < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-
   def email_required?
     false
   end
@@ -12,4 +11,6 @@ class Socio < ActiveRecord::Base
     false
   end
   
+  validate :nome,     presence: true
+  validate :cognome,  presence: true
 end

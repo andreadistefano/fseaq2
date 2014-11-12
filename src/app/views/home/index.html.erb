@@ -1,1 +1,10 @@
 <%= @prova.to_s %>
+
+<div id="notizie">
+<h1> Elenco Notizie </h1>
+<%if !@rows.nil? %>
+  <% @rows.each do |r| %>
+    <p> <%= r %></p>
+  <% end %>
+<% end %>
+</div>
