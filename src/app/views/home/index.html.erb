@@ -1,13 +1,13 @@
-<div id="notizie">
+<div id="div_notizie">
 <h1> Elenco Notizie </h1>
 <%if !@notizie.nil? %>
-  <table><tbody>
-  <% @notizie.each do |n| %>
-    <tr>
-      <td><%= link_to n.title, n %></td>
-    </tr>
-  <% end %>
-  </tbody></table>
-  <%= paginate @notizie %>
-<% end %>
+<table>
+  <tbody id="notizie">
+    <%= render @notizie %>
+  </tbody>
+</table>
 </div>
+<div id="div_paginator">  
+  <%= paginate @notizie, remote: true %>
+</div>
+<% end %>

@@ -1,0 +1,2 @@
+$("#notizie").html("<%= escape_javascript(render('notizie')) %>");
+$("#paginator").html("<%= escape_javascript(paginate(@notizie, remote: true)) %>");

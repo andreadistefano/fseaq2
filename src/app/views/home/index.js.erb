@@ -1,0 +1,2 @@
+$("tbody#notizie").html("<%= escape_javascript render(@notizie) %>");
+$("#div_paginator").html("<%= escape_javascript(paginate(@notizie, :remote => true).to_s) %>");
