@@ -10,7 +10,9 @@ class Socio < ActiveRecord::Base
   def email_changed?
     false
   end
-  
+
+  # Validazione
   validate :nome,     presence: true
   validate :cognome,  presence: true
+  validate :username, presence: true
 end
