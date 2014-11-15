@@ -2,12 +2,12 @@
 
 <p>
   <strong>Nome:</strong>
-  <%= @unita.nome %>
+  <%= @unita.branca.nome_unita + " " + @unita.nome %>
 </p>
 
 <p>
   <strong>Branca:</strong>
-  <%= @unita.branca %>
+  <%= @unita.branca.nome %>
 </p>
 
 <%= link_to 'Edit', edit_unita_path(@unita) %> |
