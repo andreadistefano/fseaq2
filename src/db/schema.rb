@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141112084928) do
+ActiveRecord::Schema.define(version: 20141115094010) do
 
   create_table "branca", force: true do |t|
     t.string   "nome"
-    t.string   "nomeUnita"
+    t.string   "nome_unita"
     t.string   "descrizione"
     t.datetime "created_at"
     t.datetime "updated_at"
