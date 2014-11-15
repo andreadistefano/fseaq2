@@ -1,0 +1,27 @@
+<h1>Listing unita</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Branca</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @unita.each do |unita| %>
+      <tr>
+        <td><%= unita.nome %></td>
+        <td><%= unita.branca %></td>
+        <td><%= link_to 'Show', unita %></td>
+        <td><%= link_to 'Edit', edit_unita_path(unita) %></td>
+        <td><%= link_to 'Destroy', unita, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Unita', new_unita_path %>

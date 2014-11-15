@@ -1,0 +1,25 @@
+<%= form_for(@unita) do |f| %>
+  <% if @unita.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@unita.errors.count, "error") %> prohibited this unita from being saved:</h2>
+
+      <ul>
+      <% @unita.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :branca_id %><br>
+    <%= f.text_field :branca_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
