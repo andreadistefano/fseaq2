@@ -1,14 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<h1>
   <%= @notizia.title %>
-</p>
+</h1>
 
 <p>
-  <strong>Text:</strong>
-  <%= @notizia.text %>
+  <%= @notizia.text.html_safe %>
 </p>
+
+<% if !@notizia.unita.empty? %>
+	<p> Unità:
+		<% @notizia.unita.each_with_index do |u, i| %>
+			<% if i > 0 %>
+				|
+			<% end %>
+			<%= link_to u.nome_completo, u %>
+		<% end %>
+	</p>
+<% end %>
 
 <%= link_to 'Edit', edit_notizia_path(@notizia) %> |
 <%= link_to 'Back', notizie_path %>

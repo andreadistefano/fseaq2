@@ -1,14 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @unita.branca.nome_unita + " " + @unita.nome %>
-</p>
-
-<p>
-  <strong>Branca:</strong>
-  <%= @unita.branca.nome %>
-</p>
+<h1>
+  <%= @unita.nome_completo %>
+</h1>
 
 <%= link_to 'Edit', edit_unita_path(@unita) %> |
 <%= link_to 'Back', unita_index_path %>
