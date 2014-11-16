@@ -51,3 +51,7 @@ gem 'chosen-rails'
 gem 'compass-rails', '~> 1.1.2'
 # Redactor (WYSIWYG editor)
 gem 'redactor-rails'
+gem "carrierwave"
+gem "mini_magick"
+# JQuery-Turbolinks per compatibilità
+gem 'jquery-turbolinks'

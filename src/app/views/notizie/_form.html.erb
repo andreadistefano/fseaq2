@@ -23,7 +23,7 @@
     <%= f.label :unita %><br>
     <%= f.select :unita,
       Unita.all.map { |u| [ u.branca.nome + " - " + u.nome_completo, u.id] },
-      {  },
+      {selected: @notizia.unita.collect(&:id)},
       { class: 'chosen-select', multiple: true, 'data-placeholder' => 'Seleziona...' }
     %>
   </div>
