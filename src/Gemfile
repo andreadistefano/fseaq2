@@ -46,3 +46,5 @@ gem 'cancan'
 gem 'kaminari'
 # FriendlyId (URL basate sul nome)
 gem 'friendly_id', '~> 5.0.0'
+# Chosen (selezione multipla)
+gem 'chosen-rails'

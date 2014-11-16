@@ -19,6 +19,14 @@
     <%= f.label :text %><br>
     <%= f.text_area :text, required: true %>
   </div>
+  <div class="field">
+    <%= f.label :unita %><br>
+    <%= f.select :unita,
+      Unita.all.map { |u| [ u.branca.nome + " - " + u.nome_completo, u.id] },
+      {  },
+      { class: 'chosen-select', multiple: true, 'data-placeholder' => 'Seleziona...' }
+    %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
