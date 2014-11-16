@@ -1,20 +1,10 @@
-<h1>Listing notizie</h1>
+<h1>Elenco Notizie</h1>
 
 <table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Text</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @notizie.each do |notizia| %>
       <tr>
-        <td><%= notizia.title %></td>
-        <td><%= notizia.text %></td>
-        <td><%= link_to 'Show', notizia %></td>
+        <td><%= link_to notizia.title, notizia %></td>
         <td><%= link_to 'Edit', edit_notizia_path(notizia) %></td>
         <td><%= link_to 'Destroy', notizia, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
