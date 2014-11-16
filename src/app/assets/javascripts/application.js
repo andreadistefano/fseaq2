@@ -12,7 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require turbolinks
 //= require lib/abstract-chosen
 //= require lib/select-parser
 //= require chosen.jquery
 //= require chosen-scaffold
+//= require redactor-rails

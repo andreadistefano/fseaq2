@@ -46,5 +46,8 @@ gem 'cancan'
 gem 'kaminari'
 # FriendlyId (URL basate sul nome)
 gem 'friendly_id', '~> 5.0.0'
-# Chosen (selezione multipla)
+# Chosen (selezione multipla). Compass-rails per compatibilità
 gem 'chosen-rails'
+gem 'compass-rails', '~> 1.1.2'
+# Redactor (WYSIWYG editor)
+gem 'redactor-rails'
