@@ -18,3 +18,4 @@
 //= require chosen.jquery
 //= require chosen-scaffold
 //= require redactor-rails
+//= require redactor-rails/langs/it
