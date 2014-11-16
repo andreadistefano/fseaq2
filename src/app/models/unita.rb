@@ -5,4 +5,11 @@ class Unita < ActiveRecord::Base
   has_and_belongs_to_many :notizie
 
   validates :nome, presence: true
+
+  extend FriendlyId
+  friendly_id :nome, use: :slugged
+
+  def nome_completo
+  	return branca.nome_unita + " " + nome
+  end
 end

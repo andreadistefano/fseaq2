@@ -11,8 +11,16 @@ class Socio < ActiveRecord::Base
     false
   end
 
+  def nome_completo
+    return nome + " " + cognome
+  end
+  
   # Validazione
   validate :nome,     presence: true
   validate :cognome,  presence: true
   validate :username, presence: true
+
+  # Friendly_id
+  extend FriendlyId
+  friendly_id :username, use: :slugged
 end

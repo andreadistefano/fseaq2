@@ -44,3 +44,5 @@ gem 'devise'
 gem 'cancan'
 # Kaminari (paginazione)
 gem 'kaminari'
+# FriendlyId (URL basate sul nome)
+gem 'friendly_id', '~> 5.0.0'

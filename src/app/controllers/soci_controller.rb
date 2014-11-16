@@ -3,6 +3,6 @@ class SociController < ApplicationController
   def show
   end
   def set_socio
-    @socio = Socio.find(params[:id])
+    @socio = Socio.friendly.find(params[:id])
   end
 end
