@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :censimenti
+
   mount RedactorRails::Engine => '/redactor_rails'
   devise_for :soci
   # The priority is based upon order of creation: first created -> highest priority.

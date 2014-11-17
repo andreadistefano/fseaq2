@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Anno:</strong>
+  <%= @censimento.anno %>
+</p>
+
+<p>
+  <strong>Socio:</strong>
+  <%= @censimento.socio %>
+</p>
+
+<p>
+  <strong>Unita:</strong>
+  <%= @censimento.unita %>
+</p>
+
+<p>
+  <strong>Unita servizio:</strong>
+  <%= @censimento.unita_servizio %>
+</p>
+
+<p>
+  <strong>Capo:</strong>
+  <%= @censimento.capo %>
+</p>
+
+<p>
+  <strong>Capo gruppo:</strong>
+  <%= @censimento.capo_gruppo %>
+</p>
+
+<p>
+  <strong>Vice capo gruppo:</strong>
+  <%= @censimento.vice_capo_gruppo %>
+</p>
+
+<%= link_to 'Edit', edit_censimento_path(@censimento) %> |
+<%= link_to 'Back', censimenti_path %>

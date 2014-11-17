@@ -1,0 +1,45 @@
+<%= form_for(@censimento) do |f| %>
+  <% if @censimento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@censimento.errors.count, "error") %> prohibited this censimento from being saved:</h2>
+
+      <ul>
+      <% @censimento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :anno %><br>
+    <%= f.text_field :anno %>
+  </div>
+  <div class="field">
+    <%= f.label :socio_id %><br>
+    <%= f.text_field :socio_id %>
+  </div>
+  <div class="field">
+    <%= f.label :unita_id %><br>
+    <%= f.text_field :unita_id %>
+  </div>
+  <div class="field">
+    <%= f.label :unita_servizio_id %><br>
+    <%= f.text_field :unita_servizio_id %>
+  </div>
+  <div class="field">
+    <%= f.label :capo %><br>
+    <%= f.check_box :capo %>
+  </div>
+  <div class="field">
+    <%= f.label :capo_gruppo %><br>
+    <%= f.check_box :capo_gruppo %>
+  </div>
+  <div class="field">
+    <%= f.label :vice_capo_gruppo %><br>
+    <%= f.check_box :vice_capo_gruppo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

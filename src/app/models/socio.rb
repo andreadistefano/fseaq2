@@ -14,7 +14,9 @@ class Socio < ActiveRecord::Base
   def nome_completo
     return nome + " " + cognome
   end
-  
+
+  has_many :censimenti, inverse_of: :socio
+
   # Validazione
   validate :nome,     presence: true
   validate :cognome,  presence: true

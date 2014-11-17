@@ -1,0 +1,37 @@
+<h1>Listing censimenti</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Anno</th>
+      <th>Socio</th>
+      <th>Unita</th>
+      <th>Unita servizio</th>
+      <th>Capo</th>
+      <th>Capo gruppo</th>
+      <th>Vice capo gruppo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @censimenti.each do |censimento| %>
+      <tr>
+        <td><%= censimento.anno %></td>
+        <td><%= censimento.socio %></td>
+        <td><%= censimento.unita %></td>
+        <td><%= censimento.unita_servizio %></td>
+        <td><%= censimento.capo %></td>
+        <td><%= censimento.capo_gruppo %></td>
+        <td><%= censimento.vice_capo_gruppo %></td>
+        <td><%= link_to 'Show', censimento %></td>
+        <td><%= link_to 'Edit', edit_censimento_path(censimento) %></td>
+        <td><%= link_to 'Destroy', censimento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Censimento', new_censimento_path %>

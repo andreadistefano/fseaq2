@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141116173609) do
+ActiveRecord::Schema.define(version: 20141117084130) do
 
   create_table "branca", force: true do |t|
     t.string   "nome"
@@ -20,6 +20,19 @@ ActiveRecord::Schema.define(version: 20141116173609) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "censimento", force: true do |t|
+    t.integer  "anno"
+    t.integer  "socio_id"
+    t.integer  "unita_id"
+    t.boolean  "capo_gruppo"
+    t.boolean  "vice_capo_gruppo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "censimento", ["socio_id"], name: "index_censimento_on_socio_id"
+  add_index "censimento", ["unita_id"], name: "index_censimento_on_unita_id"
 
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
