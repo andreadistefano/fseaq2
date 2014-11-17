@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141117084130) do
+ActiveRecord::Schema.define(version: 20141117085721) do
 
   create_table "branca", force: true do |t|
     t.string   "nome"
@@ -76,6 +76,18 @@ ActiveRecord::Schema.define(version: 20141117084130) do
 
   add_index "redactor_assets", ["assetable_type", "assetable_id"], name: "idx_redactor_assetable"
   add_index "redactor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_redactor_assetable_type"
+
+  create_table "servizio", force: true do |t|
+    t.integer  "socio_id"
+    t.integer  "unita_id"
+    t.boolean  "capo"
+    t.integer  "anno"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "servizio", ["socio_id"], name: "index_servizio_on_socio_id"
+  add_index "servizio", ["unita_id"], name: "index_servizio_on_unita_id"
 
   create_table "socio", force: true do |t|
     t.string   "email",                  default: "", null: false

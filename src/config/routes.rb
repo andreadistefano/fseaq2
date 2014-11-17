@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :servizi
+
   resources :censimenti
 
   mount RedactorRails::Engine => '/redactor_rails'

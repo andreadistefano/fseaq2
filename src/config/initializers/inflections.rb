@@ -22,4 +22,5 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'capo',				'capi'
   inflect.irregular 'notizia', 	 	'notizie'
   inflect.irregular 'censimento', 'censimenti'
+  inflect.irregular 'servizio', 	'servizi'
 end
