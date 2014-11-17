@@ -16,6 +16,7 @@ class Socio < ActiveRecord::Base
   end
 
   has_many :censimenti, inverse_of: :socio
+  has_many :servizi, inverse_of: :socio
 
   # Validazione
   validate :nome,     presence: true

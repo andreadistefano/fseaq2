@@ -5,9 +5,9 @@ class Censimento < ActiveRecord::Base
   						class_name: "Unita",
   						foreign_key: "unita_servizio_id"
 
-  validates :socio, uniqueness: {scope: :anno}
-  validates :capo_gruppo, uniqueness: {scope: :anno}, if: :capo_gruppo
-  validates :vice_capo_gruppo, uniqueness: {scope: :anno}, if: :vice_capo_gruppo
+  validates :socio, uniqueness: { scope: :anno }
+  validates :capo_gruppo, uniqueness: { scope: :anno }, if: :capo_gruppo
+  validates :vice_capo_gruppo, uniqueness: { scope: :anno }, if: :vice_capo_gruppo
 
-  scope :anno, ->(a) { where(anno: a)}
+  scope :anno, ->(a=AnnoScout.current.to_i) { where(anno: a) }
 end
