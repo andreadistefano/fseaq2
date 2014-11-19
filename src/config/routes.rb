@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :distintivi
+
   resources :servizi
 
   resources :censimenti

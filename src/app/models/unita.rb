@@ -23,7 +23,7 @@ class Unita < ActiveRecord::Base
   def nome_completo
   	return branca.nome_unita + " " + nome
   end
-  
+
   def staff(a = AnnoScout.current.to_i)
 		return {
 			# references() serve a poter effettuare il successivo where()
