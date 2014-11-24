@@ -15,3 +15,8 @@
  *= require chosen
  *= require redactor-rails
  */
+
+ .form_title {
+    font-size: 18pt;
+
+ }

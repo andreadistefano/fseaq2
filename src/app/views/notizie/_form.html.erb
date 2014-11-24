@@ -12,18 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title, required: true %>
+    <%= f.text_field :title, required: true, class:'form_title' %>
   </div>
   <div class="field">
-    <%= f.label :text %><br>
     <%= f.text_area :text, required: true, class: "redactor" %>
   </div>
   <div class="field">
-    <%= f.label :unita, "Unità" %><br>
-    <%= f.select :unita,
+    <%= f.label :unita_ids, "Unità" %><br>
+    <%= f.select :unita_ids,
       Unita.all.map { |u| [ u.branca.nome + " - " + u.nome_completo, u.id] },
-      {selected: @notizia.unita.collect(&:id)},
+      { selected: @notizia.unita.collect(&:id) },
       { class: 'chosen-select', multiple: true, 'data-placeholder' => 'Seleziona...' }
     %>
   </div>
