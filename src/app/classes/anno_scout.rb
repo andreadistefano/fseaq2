@@ -10,7 +10,7 @@ class AnnoScout
     end
   end
   def to_s
-  	return @year.to_s + "-" + (@year+1).to_s
+    return @year.to_s + "-" + (@year+1).to_s
   end
   def to_i
     return @year

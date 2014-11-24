@@ -9,14 +9,14 @@
 </p>
 
 <% if !@notizia.unita.empty? %>
-	<p> Unità:
-		<% @notizia.unita.each_with_index do |u, i| %>
-			<% if i > 0 %>
-				|
-			<% end %>
-			<%= link_to u.nome_completo, u %>
-		<% end %>
-	</p>
+  <p> Unità:
+    <% @notizia.unita.each_with_index do |u, i| %>
+      <% if i > 0 %>
+        |
+      <% end %>
+      <%= link_to u.nome_completo, u %>
+    <% end %>
+  </p>
 <% end %>
 
 <%= link_to 'Edit', edit_notizia_path(@notizia) %> |

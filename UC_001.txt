@@ -16,31 +16,31 @@ Flusso di base:
     3. Il Capo sceglie la Branca o le Branche a cui fa riferimento la notizia.
     4. Il Capo sceglie se la notizia va pubblicata immediatamente o meno.
     5. Il Capo schiaccia sul pulsante di pubblicazione.
-    6.          Il Sistema aggiunge informazioni aggiuntive alla notizia: autore, ora di creazione, ecc.
-    7.          Il Sistema conferma che l'inserimento è avvenuto con successo.
-    
+    6. Il Sistema aggiunge informazioni aggiuntive alla notizia: autore, ora di creazione, ecc.
+    7. Il Sistema conferma che l'inserimento è avvenuto con successo.
+
 Flussi alternativi:
     2a. Il Capo inserisce un'immagine nel testo della notizia.
         (Dettagli sul caricamento immagine)
     5a. Il Capo è andato offline mentre creava la notizia:
         5-1.    Il Sistema mostra un messaggio di errore.
-        
+
 Postcondizioni:
     La notizia viene visualizzata sulle pagine delle relative Branche.
     Il Capo viene condotto alla schermata con l'elenco delle notizie.
-    
+
 ELENCO
 
 La schermata principale conterrà un elenco paginato di notizie visibili al Capo.
 
 Flusso di base:
-    1.      Il Sistema verifica la Branca del Capo e i suoi permessi.
-    2.      Il Sistema restituisce l'elenco di notizie che il Capo può vedere.
-    
+    1. Il Sistema verifica la Branca del Capo e i suoi permessi.
+    2. Il Sistema restituisce l'elenco di notizie che il Capo può vedere.
+
 CANCELLAZIONE
 
 Accanto a ciascuna notizia sarà presente un pulsante di cancellazione.
 
 Flusso di base:
     1. Il Capo richiede la cancellazione di una notizia.
-    2.      Il Sistema richiede una conferma
+    2. Il Sistema richiede una conferma

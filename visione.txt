@@ -10,7 +10,7 @@ Il progetto punta alla massima semplicità per tutti i suoi utenti:
     branche;
     - Gli admin potranno creare nuovi utenti, modificare i privilegi di ogni utente e
     aggiungere/modificare/eliminare i contenuti di tutte le Branche.
-    
+
 Politica di registrazione: gli utenti vengono creati in base ai dati del censimento annuale.
 Questo non significa necessariamente che l'utente venga eliminato all'istante se il socio
 smette di censirsi, ma sarebbe opportuno stabilire una deadline di qualche anno raggiunta la
