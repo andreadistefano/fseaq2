@@ -12,6 +12,6 @@ module ActiveRecord
       else
         raise "Task not implemented for this DB adapter"
       end
-    end     
+    end
   end
 end
