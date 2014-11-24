@@ -42,6 +42,6 @@ class CensimentiController < ApplicationController
     end
 
     def censimento_params
-      params.require(:censimento).permit(:anno, :socio_id, :unita_id, :unita_servizio_id, :capo, :capo_gruppo, :vice_capo_gruppo)
+      params.require(:censimento).permit(:anno, :socio_id, :unita_id, :capo_gruppo, :vice_capo_gruppo)
     end
 end
