@@ -55,3 +55,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 # JQuery-Turbolinks per compatibilità
 gem 'jquery-turbolinks'
+# Better_errors
+group :development do
+  gem "better_errors"
+end
