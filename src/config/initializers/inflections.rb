@@ -24,4 +24,5 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'censimento', 'censimenti'
   inflect.irregular 'servizio',   'servizi'
   inflect.irregular 'distintivo', 'distintivi'
+  inflect.irregular 'cerimonia',  'cerimonie'
 end

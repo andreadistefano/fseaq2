@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :cerimonie
+
   resources :distintivi
 
   resources :servizi

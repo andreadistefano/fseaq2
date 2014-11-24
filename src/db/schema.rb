@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141123100338) do
+ActiveRecord::Schema.define(version: 20141123162815) do
 
   create_table "branca", force: true do |t|
     t.string   "nome"
@@ -34,12 +34,24 @@ ActiveRecord::Schema.define(version: 20141123100338) do
   add_index "censimento", ["socio_id"], name: "index_censimento_on_socio_id"
   add_index "censimento", ["unita_id"], name: "index_censimento_on_unita_id"
 
+  create_table "cerimonia", force: true do |t|
+    t.integer  "socio_id"
+    t.integer  "distintivo_id"
+    t.date     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "cerimonia", ["distintivo_id"], name: "index_cerimonia_on_distintivo_id"
+  add_index "cerimonia", ["socio_id"], name: "index_cerimonia_on_socio_id"
+
   create_table "distintivo", force: true do |t|
     t.string   "nome"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "livello"
     t.boolean  "specialita"
+    t.integer  "branca_id"
   end
 
   create_table "friendly_id_slugs", force: true do |t|
