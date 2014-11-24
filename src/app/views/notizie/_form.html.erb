@@ -20,7 +20,7 @@
     <%= f.text_area :text, required: true, class: "redactor" %>
   </div>
   <div class="field">
-    <%= f.label :unita %><br>
+    <%= f.label :unita, "Unità" %><br>
     <%= f.select :unita,
       Unita.all.map { |u| [ u.branca.nome + " - " + u.nome_completo, u.id] },
       {selected: @notizia.unita.collect(&:id)},
