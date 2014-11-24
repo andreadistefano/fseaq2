@@ -2,13 +2,13 @@ require 'test_helper'
 
 class DistintiviControllerTest < ActionController::TestCase
   setup do
-    @distintivo = distintivo(:one)
+    @distintivo = distintivo(:promessa_lupetti)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:distintivo)
+    assert_not_nil assigns(:distintivi)
   end
 
   test "should get new" do

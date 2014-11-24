@@ -8,7 +8,7 @@ class ServiziControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:servizio)
+    assert_not_nil assigns(:servizi)
   end
 
   test "should get new" do
@@ -18,7 +18,7 @@ class ServiziControllerTest < ActionController::TestCase
 
   test "should create servizio" do
     assert_difference('Servizio.count') do
-      post :create, servizio: { anno: @servizio.anno, capo: @servizio.capo, socio_id: @servizio.socio_id, unita_id: @servizio.unita_id }
+      post :create, servizio: { anno: 2013 , capo: @servizio.capo, socio_id: @servizio.socio_id, unita_id: @servizio.unita_id }
     end
 
     assert_redirected_to servizio_path(assigns(:servizio))

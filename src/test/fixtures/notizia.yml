@@ -3,11 +3,9 @@
 one:
   title: MyString
   text: MyString
-  string: MyString
-  unita_id: 
+  unita: dhak, arcobaleno
 
 two:
   title: MyString
   text: MyString
-  string: MyString
-  unita_id: 
+  unita: arcobaleno

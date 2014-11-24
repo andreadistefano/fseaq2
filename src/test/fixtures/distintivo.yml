@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-dhak:
-  nome: Dhak
+promessa_lupetti:
+  nome: Promessa
   branca: lupetti
+  livello: 0
 
-arcobaleno:
-  nome: Arcobaleno
+promessa_coccinelle:
+  nome: Promessa
   branca: coccinelle
+  livello: 0

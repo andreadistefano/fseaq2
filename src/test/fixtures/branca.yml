@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+lupetti:
+  nome: Lupetti
+  nome_unita: Branco
+  descrizione: lupetti
+
+coccinelle:
+  nome: Coccinelle
+  nome_unita: Cerchio
+  descrizione: coccinelle

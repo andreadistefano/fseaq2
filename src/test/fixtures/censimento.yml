@@ -1,0 +1,36 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  anno: 2012
+  socio: mich
+  unita: dhak
+  capo_gruppo: false
+  vice_capo_gruppo: false
+
+two:
+  anno: 2013
+  socio: mich
+  unita: dhak
+  capo_gruppo: false
+  vice_capo_gruppo: false
+
+three:
+  anno: 2013
+  socio: jane
+  unita: arcobaleno
+  capo_gruppo: false
+  vice_capo_gruppo: false
+
+four:
+  anno: 2014
+  socio: capo
+  unita:
+  capo_gruppo: false
+  vice_capo_gruppo: false
+
+five:
+  anno: 2013
+  socio: capo
+  unita:
+  capo_gruppo: false
+  vice_capo_gruppo: false

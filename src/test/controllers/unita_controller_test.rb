@@ -2,7 +2,7 @@ require 'test_helper'
 
 class UnitaControllerTest < ActionController::TestCase
   setup do
-    @unita = unita(:one)
+    @unita = unita(:dhak)
   end
 
   test "should get index" do
@@ -18,7 +18,7 @@ class UnitaControllerTest < ActionController::TestCase
 
   test "should create unita" do
     assert_difference('Unita.count') do
-      post :create, unita: { branca_id: @unita.branca_id, nome: @unita.nome }
+      post :create, unita: { branca_id: @unita.branca_id, nome: @unita.nome+"aaa" }
     end
 
     assert_redirected_to unita_path(assigns(:unita))

@@ -8,7 +8,7 @@ class CensimentiControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:censimento)
+    assert_not_nil assigns(:censimenti)
   end
 
   test "should get new" do
@@ -18,9 +18,8 @@ class CensimentiControllerTest < ActionController::TestCase
 
   test "should create censimento" do
     assert_difference('Censimento.count') do
-      post :create, censimento: { anno: @censimento.anno, capo: @censimento.capo, capo_gruppo: @censimento.capo_gruppo, socio_id: @censimento.socio_id, unita_id: @censimento.unita_id, unita_servizio_id: @censimento.unita_servizio_id, vice_capo_gruppo: @censimento.vice_capo_gruppo }
+      post :create, censimento: { anno: 2014, capo_gruppo: @censimento.capo_gruppo, socio_id: @censimento.socio_id, unita_id: @censimento.unita_id, vice_capo_gruppo: @censimento.vice_capo_gruppo }
     end
-
     assert_redirected_to censimento_path(assigns(:censimento))
   end
 
@@ -35,7 +34,7 @@ class CensimentiControllerTest < ActionController::TestCase
   end
 
   test "should update censimento" do
-    patch :update, id: @censimento, censimento: { anno: @censimento.anno, capo: @censimento.capo, capo_gruppo: @censimento.capo_gruppo, socio_id: @censimento.socio_id, unita_id: @censimento.unita_id, unita_servizio_id: @censimento.unita_servizio_id, vice_capo_gruppo: @censimento.vice_capo_gruppo }
+    patch :update, id: @censimento, censimento: { anno: @censimento.anno, capo_gruppo: @censimento.capo_gruppo, socio_id: @censimento.socio_id, unita_id: @censimento.unita_id, vice_capo_gruppo: @censimento.vice_capo_gruppo }
     assert_redirected_to censimento_path(assigns(:censimento))
   end
 

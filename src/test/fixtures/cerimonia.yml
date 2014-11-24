@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  socio: mich
+  distintivo: promessa_lupetti
+  data: 2014-11-23
+
+two:
+  socio: jane
+  distintivo: promesa_coccinelle
+  data: 2014-11-23
